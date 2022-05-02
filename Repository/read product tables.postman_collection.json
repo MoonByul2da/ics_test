@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "1195bbdb-378b-4773-bf46-c9aad4967bd0",
+		"name": "read product tables",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:2000/read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/read/single/quantity/5",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"read",
+						"single",
+						"quantity",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

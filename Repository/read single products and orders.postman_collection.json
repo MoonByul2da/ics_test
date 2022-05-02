@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "f84b0518-bdde-4381-8af7-155995fdd9f8",
+		"name": "read single products and orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:2000/read/single/quantity/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/read/single/quantity/5",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"read",
+						"single",
+						"quantity",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:2000/read/single/pay_status/paid success",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/read/single/pay_status/paid success",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"read",
+						"single",
+						"pay_status",
+						"paid success"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:2000/read/single/color/green",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/read/single/color/green",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"read",
+						"single",
+						"color",
+						"green"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:2000/read/single/gender/male",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/read/single/gender/male",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"read",
+						"single",
+						"gender",
+						"male"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:2000/read/single/size/m",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/read/single/size/m",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"read",
+						"single",
+						"size",
+						"m"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:2000/read/single/paid_date/2022-05-05",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2000/read/single/paid_date/2022-05-05",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"read",
+						"single",
+						"paid_date",
+						"2022-05-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:2000/orders",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"pid\": \"0004\",\r\n    \"name\": \"lalisa manoban\",\r\n    \"quantity\": \"5\",\r\n    \"address\": \"Thailand Bangkok 10400\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2000/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"orders"
+					]
+				},
+				"description": "send data to database as post "
+			},
+			"response": []
+		}
+	]
+}
